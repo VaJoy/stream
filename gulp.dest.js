@@ -33,7 +33,7 @@ function dest(outFolder, opt) {
     //生成目标文件/文件夹
     mapStream.pipe(saveStream);
 
-    //依旧返回输出流（duplex stream），不过常规也不会有下游消费了
+    //依旧返回输出流（duplex stream）
     return outputStream;
 }
 
