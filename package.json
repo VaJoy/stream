@@ -13,6 +13,10 @@
   "license": "MIT",
   "dependencies": {
     "csv2": "^0.1.1",
-    "through2": "^2.0.3"
+    "glob": "^7.1.1",
+    "micromatch": "^2.3.11",
+    "through2": "^2.0.3",
+    "vinyl": "^1.0.0",
+    "vinyl-fs": "^2.0.0"
   }
 }
