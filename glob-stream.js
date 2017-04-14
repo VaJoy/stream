@@ -62,7 +62,7 @@ var gs = {
 
         //定义 _transform 方法，过滤掉排除模式所排除的文件
         function filterNegatives(filename, enc, cb) {
-            //filename 是匹配到的文件对象
+            //filename 是匹配到的文件对象，其实这里叫file更合适。通过filename.path可获取文件的路径
             var matcha = isMatch.bind(null, filename);
             if (negatives.every(matcha)) {
                 cb(null, filename); //把匹配到的文件推送入缓存（供下游消费）
